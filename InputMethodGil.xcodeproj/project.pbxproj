@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5C6E5521AA836A00AD7EA1 /* IMGilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C6E5421AA836A00AD7EA1 /* IMGilController.swift */; };
+		2B5C6E5721AA8DF500AD7EA1 /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C6E5621AA8DF500AD7EA1 /* Resources */; };
+		2B5C6E5821AA8E3B00AD7EA1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC3F2E21AA7B7D00EB84D5 /* Info.plist */; };
+		2BDA4CAF21AA901F00512E28 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BDA4CAE21AA901F00512E28 /* InputMethodKit.framework */; };
 		2BEC3F2821AA7B7D00EB84D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC3F2721AA7B7D00EB84D5 /* AppDelegate.swift */; };
 		2BEC3F2A21AA7B7D00EB84D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC3F2921AA7B7D00EB84D5 /* Assets.xcassets */; };
 		2BEC3F2D21AA7B7D00EB84D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEC3F2B21AA7B7D00EB84D5 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BEC3F2421AA7B7D00EB84D5 /* kim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5C6E5421AA836A00AD7EA1 /* IMGilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGilController.swift; sourceTree = "<group>"; };
+		2B5C6E5621AA8DF500AD7EA1 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		2BDA4CAE21AA901F00512E28 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
+		2BEC3F2421AA7B7D00EB84D5 /* InputMethodGil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputMethodGil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEC3F2721AA7B7D00EB84D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BEC3F2921AA7B7D00EB84D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BEC3F2C21AA7B7D00EB84D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2BEC3F2E21AA7B7D00EB84D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BEC3F2F21AA7B7E00EB84D5 /* kim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kim.entitlements; sourceTree = "<group>"; };
+		2BEC3F2F21AA7B7E00EB84D5 /* IMGil.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMGil.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,46 +33,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDA4CAF21AA901F00512E28 /* InputMethodKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BDA4CAD21AA901F00512E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BDA4CAE21AA901F00512E28 /* InputMethodKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BEC3F1B21AA7B7D00EB84D5 = {
 			isa = PBXGroup;
 			children = (
-				2BEC3F2621AA7B7D00EB84D5 /* kim */,
+				2BEC3F2621AA7B7D00EB84D5 /* IMGil */,
 				2BEC3F2521AA7B7D00EB84D5 /* Products */,
+				2B5C6E5621AA8DF500AD7EA1 /* Resources */,
+				2BDA4CAD21AA901F00512E28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2BEC3F2521AA7B7D00EB84D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BEC3F2421AA7B7D00EB84D5 /* kim.app */,
+				2BEC3F2421AA7B7D00EB84D5 /* InputMethodGil.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BEC3F2621AA7B7D00EB84D5 /* kim */ = {
+		2BEC3F2621AA7B7D00EB84D5 /* IMGil */ = {
 			isa = PBXGroup;
 			children = (
 				2BEC3F2721AA7B7D00EB84D5 /* AppDelegate.swift */,
 				2BEC3F2921AA7B7D00EB84D5 /* Assets.xcassets */,
 				2BEC3F2B21AA7B7D00EB84D5 /* MainMenu.xib */,
 				2BEC3F2E21AA7B7D00EB84D5 /* Info.plist */,
-				2BEC3F2F21AA7B7E00EB84D5 /* kim.entitlements */,
+				2B5C6E5421AA836A00AD7EA1 /* IMGilController.swift */,
+				2BEC3F2F21AA7B7E00EB84D5 /* IMGil.entitlements */,
 			);
-			path = kim;
+			path = IMGil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BEC3F2321AA7B7D00EB84D5 /* kim */ = {
+		2BEC3F2321AA7B7D00EB84D5 /* InputMethodGil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BEC3F3221AA7B7E00EB84D5 /* Build configuration list for PBXNativeTarget "kim" */;
+			buildConfigurationList = 2BEC3F3221AA7B7E00EB84D5 /* Build configuration list for PBXNativeTarget "InputMethodGil" */;
 			buildPhases = (
 				2BEC3F2021AA7B7D00EB84D5 /* Sources */,
 				2BEC3F2121AA7B7D00EB84D5 /* Frameworks */,
@@ -75,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = kim;
+			name = InputMethodGil;
 			productName = kim;
-			productReference = 2BEC3F2421AA7B7D00EB84D5 /* kim.app */;
+			productReference = 2BEC3F2421AA7B7D00EB84D5 /* InputMethodGil.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BEC3F1F21AA7B7D00EB84D5 /* Build configuration list for PBXProject "kim" */;
+			buildConfigurationList = 2BEC3F1F21AA7B7D00EB84D5 /* Build configuration list for PBXProject "InputMethodGil" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BEC3F2321AA7B7D00EB84D5 /* kim */,
+				2BEC3F2321AA7B7D00EB84D5 /* InputMethodGil */,
 			);
 		};
 /* End PBXProject section */
@@ -118,8 +137,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5C6E5821AA8E3B00AD7EA1 /* Info.plist in Resources */,
 				2BEC3F2A21AA7B7D00EB84D5 /* Assets.xcassets in Resources */,
 				2BEC3F2D21AA7B7D00EB84D5 /* MainMenu.xib in Resources */,
+				2B5C6E5721AA8DF500AD7EA1 /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BEC3F2821AA7B7D00EB84D5 /* AppDelegate.swift in Sources */,
+				2B5C6E5521AA836A00AD7EA1 /* IMGilController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,15 +289,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kim/kim.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IMGil/IMGil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = kim/Info.plist;
+				INFOPLIST_FILE = IMGil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sky923.kim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky923.inputmethod.gil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -285,15 +307,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kim/kim.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IMGil/IMGil.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = kim/Info.plist;
+				INFOPLIST_FILE = IMGil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sky923.kim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sky923.inputmethod.gil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -302,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BEC3F1F21AA7B7D00EB84D5 /* Build configuration list for PBXProject "kim" */ = {
+		2BEC3F1F21AA7B7D00EB84D5 /* Build configuration list for PBXProject "InputMethodGil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BEC3F3021AA7B7E00EB84D5 /* Debug */,
@@ -311,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BEC3F3221AA7B7E00EB84D5 /* Build configuration list for PBXNativeTarget "kim" */ = {
+		2BEC3F3221AA7B7E00EB84D5 /* Build configuration list for PBXNativeTarget "InputMethodGil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BEC3F3321AA7B7E00EB84D5 /* Debug */,
