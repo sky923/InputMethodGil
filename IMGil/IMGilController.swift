@@ -11,4 +11,7 @@ import InputMethodKit
 
 @objc(IMGilController)
 internal class IMGilController : IMKInputController {
+	override func handle(_ event: NSEvent, client: Any) -> Bool {
+		return false
+	}
 }
